@@ -1,3 +1,7 @@
+export DOCKER_CLIENT_TIMEOUT=120
+
+export COMPOSE_HTTP_TIMEOUT=120
+
 .. _readme_intro_start:
 
 Tutor: the docker-based Open edX distribution designed for peace of mind
