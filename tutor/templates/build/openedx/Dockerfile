@@ -38,11 +38,11 @@ RUN curl https://github.com/edx/edx-platform/commit/9490d8e083ccdcf8341694e38bbd
 
 # Download extra locales to /openedx/locale
 RUN cd /tmp \
-    && curl -L -o openedx-i18n.tar.gz https://github.com/openedx/openedx-i18n/archive/ironwood.tar.gz \
+    && curl -L -o openedx-i18n.tar.gz https://github.com/ejklock/openedx-i18n/archive/ufmtonline.tar.gz \
     && tar xzf /tmp/openedx-i18n.tar.gz \
-    && mv openedx-i18n-ironwood/edx-platform/locale/ /openedx/locale/ \
+    && mv openedx-i18n-ufmtonline/edx-platform/locale/ /openedx/locale/ \
     && rm -rf openedx-i18n*
-
+    
 # Install python requirements in a virtualenv
 RUN virtualenv /openedx/venv
 ENV PATH /openedx/venv/bin:${PATH}
