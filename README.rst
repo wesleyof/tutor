@@ -4,6 +4,12 @@ export DOCKER_CLIENT_TIMEOUT=120
 
 export COMPOSE_HTTP_TIMEOUT=120
 
+
+*Install Theme*
+
+git clone https://github.com/ejklock/edx.ufmt-onlinet "$(tutor config printroot)/env/build/openedx/themes/edx.ufmt-online"
+
+
 .. _readme_intro_start:
 
 Tutor: the docker-based Open edX distribution designed for peace of mind
