@@ -28,6 +28,8 @@ services:
     command: ["echo 'ready'; while true; do sleep 60; done"]
     {% endif %}
     restart: unless-stopped
+    ports:
+      - "3306:3306"
     volumes:
       - ../../data/mysql:/var/lib/mysql
     env_file: ../apps/mysql/auth.env
