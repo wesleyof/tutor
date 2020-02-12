@@ -7,7 +7,7 @@ export COMPOSE_HTTP_TIMEOUT=120
 
 *Install Theme*
 
-git clone https://github.com/ejklock/edx.ufmt-onlinet "$(tutor config printroot)/env/build/openedx/themes/edx.ufmt-online"
+git clone https://github.com/ejklock/edx.ufmt-online "$(tutor config printroot)/env/build/openedx/themes/edx.ufmt-online"
 
 
 .. _readme_intro_start:
