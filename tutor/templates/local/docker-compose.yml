@@ -29,7 +29,7 @@ services:
     {% endif %}
     restart: unless-stopped
     ports:
-      - "3306:3306"
+      - "{{MYSQL_PORT}}:3306"
     volumes:
       - ../../data/mysql:/var/lib/mysql
     env_file: ../apps/mysql/auth.env
